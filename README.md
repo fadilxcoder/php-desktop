@@ -1,5 +1,6 @@
-# Notes
+# Notes - PHP 8.1
 
+- Source https://github.com/cztomczak/phpdesktop.git
 - https://windows.php.net/downloads/releases/ (PHP for windows)
 
 ```
