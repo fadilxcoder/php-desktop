@@ -4,13 +4,13 @@
         "dpi_aware": true
     },
     "debugging": {
-        "show_console": true,
+        "show_console": false,
         "subprocess_show_console": false,
         "log_level": "DEBUG4",
         "log_file": "debug.log"
     },
     "main_window": {
-        "title": "PHP Desktop Chrome",
+        "title": "HFX",
         "icon": "",
         "default_size": [800, 600],
         "minimum_size": [640, 480],
@@ -30,7 +30,7 @@
         "default_size": [800, 600]
     },
     "web_server": {
-        "listen_on": ["127.0.0.1", 0],
+        "listen_on": ["127.0.0.1", 60106],
         "www_directory": "www",
         "index_files": ["index.html", "index.php"],
         "cgi_interpreter": "php/php-cgi.exe",
@@ -52,11 +52,11 @@
         "enable_downloads": true,
         "context_menu": {
             "enable_menu": true,
-            "navigation": true,
-            "print": true,
-            "view_source": true,
+            "navigation": false,
+            "print": false,
+            "view_source": false,
             "open_in_external_browser": true,
-            "devtools": true
+            "devtools": false
         }
     }
 }
