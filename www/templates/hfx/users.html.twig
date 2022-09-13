@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Content{% endblock %}
+
+{% block stylesheet %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+<pre>
+    <a href="{{ app.site_uri }}">GOTO homepage</a><hr>
+    {{ dump(user)}}
+    <ul>
+    {% for _user in users %}
+        <li>{{ _user.username|e }}</li>
+    {% endfor %}
+    <ul>
+</pre>
+{% endblock %}
