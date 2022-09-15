@@ -12,7 +12,7 @@
 ```
 
 - Keep `php/php.ini` and remove -> copy new php version files to `php`
-- Using in-built PHP CLI : `./php/php.exe -v`
+- Using in-built PHP CLI : `./php/php.exe -v` in root **OR** `./php bin/console .....` in `www` folder
 - Add to `composer.json`
 
 ```

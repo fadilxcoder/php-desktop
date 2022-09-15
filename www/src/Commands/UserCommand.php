@@ -20,7 +20,7 @@ class UserCommand
         $value = $input->getArgument('value');
 
         if(empty($value)) {
-            $output->writeln('Missing argument !');
+            $output->writeln('Missing argument ID !');
             return;
         }
 
@@ -31,8 +31,21 @@ class UserCommand
             return;
         }
 
+        dump('PHP 8.1 : ' . $this->php8Verifier());
+
         dump($result);
 
         $output->writeln("\nQuery executed ! \n");
+    }
+
+    private function php8Verifier()
+    {
+        $string = 'The lazy fox jumped over the fence';
+
+        if (str_contains($string, 'lazy')) {
+            return true;
+        }
+
+        return false;
     }
 }
