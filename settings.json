@@ -10,7 +10,7 @@
         "log_file": "debug.log"
     },
     "main_window": {
-        "title": "HFX Desktop",
+        "title": "IO API Server",
         "icon": "",
         "default_size": [800, 600],
         "minimum_size": [640, 480],
@@ -30,8 +30,8 @@
         "default_size": [800, 600]
     },
     "web_server": {
-        "listen_on": ["127.0.0.1", 60106],
-        "www_directory": "www/public",
+        "listen_on": ["127.0.0.1", 60135],
+        "www_directory": "www",
         "index_files": ["index.php"],
         "cgi_interpreter": "php/php-cgi.exe",
         "cgi_extensions": ["php"],
@@ -52,11 +52,11 @@
         "enable_downloads": true,
         "context_menu": {
             "enable_menu": true,
-            "navigation": false,
-            "print": false,
-            "view_source": false,
+            "navigation": true,
+            "print": true,
+            "view_source": true,
             "open_in_external_browser": true,
-            "devtools": false
+            "devtools": true
         }
     }
 }

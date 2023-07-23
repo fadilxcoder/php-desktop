@@ -1,2 +1,4 @@
 /webcache
 debug.log
+/www/vendor
+/www/*.db
